@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+}
+header nav ul li {
+  color: rgb(255, 0, 174);
+  font-size: 40px;
+}
+header nav ul li:hover {
+  color: rgb(55, 74, 127);
+}/*# sourceMappingURL=style.css.map */

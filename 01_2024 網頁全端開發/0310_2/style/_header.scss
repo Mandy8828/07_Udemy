@@ -1,0 +1,22 @@
+//  @mixin 自訂名稱 <-> @include 自訂名稱
+
+@mixin flexbox($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+header {
+  nav {
+    ul {
+      @include flexbox(column);
+      li {
+        color: $textColor;
+        font-size: 40px;
+        // 使用 & 表示為現在的標籤
+        &:hover {
+          color: rgb(55, 74, 127);
+        }
+      }
+    }
+  }
+}

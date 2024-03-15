@@ -1,0 +1,11 @@
+//  使用變數 $ 設定自訂名稱
+$textColor: rgb(255, 0, 174);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// 用 import 匯入更小範圍的 css
+@import "./header";
