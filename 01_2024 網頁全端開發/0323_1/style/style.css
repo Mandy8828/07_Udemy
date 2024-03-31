@@ -70,4 +70,19 @@ body main section.one div.picture {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+body main section.two {
+  background-color: rgb(251, 226, 205);
+  padding: 3rem 0rem;
+  justify-content: center;
+}
+body main section.two section.description {
+  width: 50%;
+  text-align: center;
+}
+body main section.two section.description h2 {
+  font-size: 2rem;
+}
+body main section.two section.description .progress-bar-area p {
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */

@@ -76,5 +76,27 @@ body {
         justify-content: center;
       }
     }
+
+    section.two {
+      background-color: rgb(251, 226, 205);
+      padding: 3rem 0rem;
+      // display: flex;
+      justify-content: center;
+
+      section.description {
+        width: 50%;
+        text-align: center;
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        .progress-bar-area {
+          p {
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
   }
 }

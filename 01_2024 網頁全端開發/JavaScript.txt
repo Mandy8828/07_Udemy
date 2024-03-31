@@ -1,0 +1,120 @@
+● 常見的JavaScript函數
+→ console.log()：將訊息輸出到Web控制台
+→ window.alert()：可以跳出一個對話框，等待用戶關閉對話框
+→ window.prompt()：讓瀏覽器帶有可選消息的對話框，提示用戶輸入一些文字，並等待用戶提交文字或取消對話框
+
+● JavaScript 的 Lexical Structure (基本規則)
+→ Case Sensitive 大小寫有區別
+→ 空白鍵、換行鍵會被忽略，為了減少檔案大小
+→ 註解方式 // or /*...*/
+→ 內部變數名稱要以 文字、_、$ 當作開頭，不能用數字
+→ 內部的關鍵字不能當作變數
+→ 它使用 Unicode 字元集合
+→ ; 符號是用來分隔程式語句
+
+● 變數(variable) 與 賦值(assignment)
+→ 宣告變數 declare variable
+1. let 若變數會變動
+2. const 若變數不會變動
+3. var ( X )
+※ 用 const 來宣告一定要馬上賦予初始值(initialize)，而 let 雖不需要馬上宣告但為賦值錢變數則是 undefined
+※ 使用 let 不能重複宣告，但可以重複賦值
+※ 使用 const 不能重複宣告、不可重複賦值
+
+● 數據類型 Data Type (primitive)
+(使用 typeof 可以查看資料類型)
+1. Number：整數與帶小數點
+→ methods：
+(1) toString() 將數字轉換成字串形式
+(2) toFixed(n) return 被轉換後的數字，到小數點第n位，最後型態為字串
+
+2. BigInt：任意長度的整數
+
+3. String：字符串
+→ 屬性 Attributes & 方法 Methods
+(01) length 計算長度
+(02) [n] 第n項的字，從0開始計算
+(03) slice(起始位置[, 結束位置])
+(04) indexOf("要找尋的東西")，會回傳要找的位置，若無則顯示-1
+(05) toUpperCase 全轉換成大寫
+(06) toLowerCase 全轉換成小寫
+(07) split("要分割的工具")，切完以後變成陣列
+(08) startsWith(要確認的內容) 檢查是否以"要確認的內容"做開頭
+(09) endsWith(要確認的內容) 檢查是否以"要確認的內容"做結尾
+(10) includes(字串) 檢查是否包含"字串"
+(11) charCodeAt(n) 找出 n 是在 UTF-16 編碼的哪個位置
+
+4. Boolean：指true、false兩種值
+
+5. null：代表某個故意不存在的值
+
+6. undefined：未被賦值的變數
+
+7. symbol：unique identifier
+
+8. object：物件可能是array or function (屬於 non-primitive)
+
+★ Bitwise Operators (進階課程)
+
+● if 語句
+(範例在 app.js)
+
+● Truthy and Falsy Values
+→ 以下六點為Falsy Values，除此之外都是Truthy (包含 {} empty object、[] empty array )
+1. false
+2. 0、-0
+3. ""、''、`` (空字串)
+4. null
+5. undefined
+6. NaN
+
+● && 和 ||
+→ && 
+// If the left hand side is true, then it evaluates as the right hand side.(ex. console.log(3 && 10) 會顯示 10)
+// If the left hand side is not true, then it evaluates as the left hand side.(ex. console.log(0 && 10) 會顯示 0)
+
+→ ||
+// If left hand side can be converted to true, returns left hand side. (ex. console.log(6 || 100) 會顯示 6)
+// else, returns right hand side.(ex. console.log(NaN || 100) 會顯示 100)
+
+● Array 陣列 []
+1. 長度可調整，且可包含不同資料類型的混合
+2. 查詢內容時，順序從0開始
+3. reference data type 他會指向跟原本一樣的地方，所以如果複製一份一樣的更改內容後，原本的也會被更動
+4. 假設 x, y 的內容皆是 [1, 2, 3] 但是兩個用 == 做比較時，會因為不同記憶體位置而
+
+→ 常見的方法
+1. push(element) 將一個或是多個元素新增到陣列末端
+2. pop() 從陣列中刪除最後一個元素
+3. shift() 從陣列中刪除第一個元素
+4. unshift(element) 將一個或是多個元素新增到陣列的開頭
+
+● Function 的時間複雜度
+
+● Object 物件 {}
+→ 內容皆使用 Key-Value
+
+● 若要檢測是否為 Array 可用
+→ Array.isArray(檢測內容)
+
+● Loop 迴圈
+→ for
+→ do while
+→ while
+
+★ 若把 return 關鍵字放到 Loop 內部，則循環會馬上停止
+★ Nested Loop 巢狀迴圈
+
+★ Loop 的關鍵字
+→ Break：終止存在他的迴圈
+→ continue：強制繼續執行
+
+● Math Object
+→ Math.PI          // 3.14159
+→ Math.E           // 2.71828
+→ Math.pow(x, y)   // 計算 x 的 y 平方
+→ Math.random()    // 介於 0~1 (不包含1) 的隨機數
+→ Math.sprt(n)     // 計算 n 開根號
+→ Math.abs()       // 絕對值
+→ Math.floor()     // 向下取整數
+→ Math.ceil()      // 無條件進位到整數
