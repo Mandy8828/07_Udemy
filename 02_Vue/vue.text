@@ -1,0 +1,25 @@
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+★ createApp()
+→ data
+→ watch
+→ computed
+→ methods
+
+● v-bind 
+→ 在data中有一個網址，想在index.html中使用<a>去做連結時使用
+
+● v-html
+→ 在data裡使用到html的標籤，在index.html想連結這個data
+
+● v-on:click / mouseenter / mouseleave / 
+
+● v-on:input / submit
+
+● v-on:once 
+→ 將 data 內的內容渲染後，不再追蹤其變化
+
+● v-model = v-bind + v-on (雙向綁定)
+
+● 縮寫
+→ v-on = @ 
+→ v-bind = :

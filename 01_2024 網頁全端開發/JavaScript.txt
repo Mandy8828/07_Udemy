@@ -118,3 +118,16 @@
 → Math.abs()       // 絕對值
 → Math.floor()     // 向下取整數
 → Math.ceil()      // 無條件進位到整數
+
+● 函數是 first-class object (一等公民)
+→ 將 function 分配給變數。ex. let hello = function () {...};
+→ 將 function 當作 argument 傳給其他 funciton
+
+● Storage 在瀏覽器中儲存數據的地方，數值都是 key-value pair，且為 string
+→ Local Storage：數據沒有過期的時效，不管是否關閉都會存在
+→ Session Storage：數據在關閉瀏覽氣候內容會銷毀
+★ methods：
+→ setItem(key, value)
+→ getItem(key) 若是 key 不存在，則返回 null
+→ removeItem(key)
+→ clear() 將所有在此的數據全部清除
